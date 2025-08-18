@@ -1,6 +1,6 @@
 .header{
   background-color: rgba(23, 23, 23, 0.838);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(15px);
   /* Safari support */
   -webkit-backdrop-filter: blur(10px); 
 
