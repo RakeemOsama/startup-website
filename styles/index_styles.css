@@ -3,6 +3,10 @@ body{
   font-family: Roboto, Arial;
   margin: 0;
   background-color: black;
+  padding-top: 80px;
+  padding-left: 96px;
+  padding-right: 24px;
+  
 }
 
 p{
