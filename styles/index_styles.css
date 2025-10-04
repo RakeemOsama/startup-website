@@ -7,6 +7,7 @@ body{
   padding-left: 96px;
   padding-right: 24px;
   height: 1000px;
+  overflow: hidden;
 }
 
 p{
