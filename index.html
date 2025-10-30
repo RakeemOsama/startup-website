@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Start Up Website</title>
+
+  <link rel="stylesheet" href="./styles/base.css">
+  <link rel="stylesheet" href="./styles/header.css">
+  <link rel="stylesheet" href="./styles/layout.css">
+  <link rel="stylesheet" href="./styles/cards.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header" role="banner" aria-label="Top navigation">
+    <div class="header-inner container">
+      <div class="header-left">
+        <button class="menu-btn" aria-label="Open menu">
+          <img src="./assets/Hamburger_icon.svg.png" alt="" class="icon" />
+        </button>
+        <div class="brand">
+          <span class="brand-title">Startup</span>
+        </div>
+      </div>
+
+      <div class="header-center">
+        <input id="lang-search" class="search" type="search" placeholder="Filter languages…" aria-label="Filter languages" />
+      </div>
+
+      <div class="header-right">
+        <button id="theme-toggle" class="pill-btn" aria-pressed="false" title="Toggle theme">🌙</button>
+        <button class="profile-btn" aria-label="Profile">
+          <!-- fixed: use onerror fallback, lazy loading, and descriptive alt -->
+          <img src="./assets/pfp-icon.jpg"
+               alt="User profile"
+               class="pfp"
+               loading="lazy"
+               onerror="this.onerror=null; this.src='./assets/icons/default-pfp.png'">
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="main container" role="main">
+    <aside class="left-column" aria-label="Languages">
+      <div class="language-list" id="languageList">
+        <div class="language-card" data-label="CSS">
+          <img src="./assets/code-language-icons/css-icon.png" alt="CSS" class="code-language" />
+          <div class="meta">
+            <div class="language-label">CSS</div>
+            <div class="language-sub">Styling</div>
+          </div>
+        </div>
+
+        <div class="language-card" data-label="Tailwind CSS">
+          <img src="./assets/code-language-icons/tailwind-css-icon.png" alt="Tailwind" class="code-language" />
+          <div class="meta">
+            <div class="language-label">Tailwind CSS</div>
+            <div class="language-sub">Utility-First</div>
+          </div>
+        </div>
+
+        <div class="language-card" data-label="HTML">
+          <img src="./assets/code-language-icons/html-icon.png" alt="HTML" class="code-language" />
+          <div class="meta">
+            <div class="language-label">HTML</div>
+            <div class="language-sub">Markup</div>
+          </div>
+        </div>
+
+        <div class="language-card" data-label="React">
+          <img src="./assets/code-language-icons/react-js-icon.png" alt="React" class="code-language" />
+          <div class="meta">
+            <div class="language-label">React</div>
+            <div class="language-sub">UI library</div>
+          </div>
+        </div>
+
+        <div class="language-card" data-label="JavaScript">
+          <img src="./assets/code-language-icons/javascript-icon.png" alt="JavaScript" class="code-language" />
+          <div class="meta">
+            <div class="language-label">JavaScript</div>
+            <div class="language-sub">Language</div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <section class="content-area" aria-label="Main content">
+      <h1 class="page-title">Welcome — pick a language</h1>
+      <p class="lead">Interactive cards use a liquid glass hover with gentle motion. Use the filter above to find a language.</p>
+
+      <div class="feature-grid">
+        <article class="feature-card">
+          <h3>Live Preview</h3>
+          <p>Tap a language card to preview starter snippets (placeholder).</p>
+        </article>
+        <article class="feature-card">
+          <h3>Docs</h3>
+          <p>Quick links to docs and code examples — add real links to integrate.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer container" role="contentinfo">
+    <small>© 2025 Startup — Organized assets & modular styles</small>
+  </footer>
+
+  <script src="./scripts/main.js" defer></script>
+</body>
+</html>

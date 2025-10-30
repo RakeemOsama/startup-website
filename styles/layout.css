@@ -1,0 +1,10 @@
+.main{ display:flex; gap:24px; align-items:flex-start; padding:28px 0 60px; }
+
+.left-column{ width:280px; min-width:220px; }
+.content-area{ flex:1; }
+
+.page-title{ font-size:24px; margin:4px 0 12px; color:var(--text); }
+.lead{ color:var(--muted); margin:0 0 18px; }
+
+.feature-grid{ display:grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap:14px; margin-top:16px; }
+.feature-card{ padding:16px; border-radius:12px; background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); border:1px solid rgba(255,255,255,0.04); box-shadow: 0 8px 30px rgba(2,6,23,0.4); }

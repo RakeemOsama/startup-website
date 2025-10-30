@@ -1,0 +1,34 @@
+:root{
+  --bg-top: #0f1724;
+  --bg-bottom: #071124;
+  --text: #e9f0ff;
+  --muted: #9fb0d3;
+  --glass-blur: 14px;
+  --header-height: 76px;
+  --container-width: 980px;
+  --pill-radius: 999px;
+}
+
+*{ box-sizing: border-box; }
+html,body{ height:100%; }
+body{
+  margin:0;
+  font-family: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color:var(--text);
+  background: linear-gradient(180deg,var(--bg-top),var(--bg-bottom));
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  padding-top: var(--header-height);
+  min-height:100vh;
+}
+
+/* simple container */
+.container{
+  width: min(var(--container-width), 94%);
+  margin: 0 auto;
+}
+
+/* utilities */
+.hidden{ display:none !important; }
+.icon{ width:20px; height:20px; display:block; }
+.pill-btn{ background: rgba(255,255,255,0.02); border:1px solid rgba(255,255,255,0.04); padding:8px 12px; border-radius:999px; color:var(--text); cursor:pointer; }

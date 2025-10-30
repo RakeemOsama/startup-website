@@ -1,28 +1,37 @@
+/* Global / reset styles */
+:root{
+  --bg-top: #0f1724;
+  --bg-bottom: #071124;
+  --text: #e9f0ff;
+  --header-height: 70px;
+  --glass-radius: 14px;
+}
+
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+
 body{
-  color: white;
-  font-family: Roboto, Arial;
   margin: 0;
-  background-color: black;
-  padding-top: 80px;
-  padding-left: 96px;
-  padding-right: 24px;
-  height: 1000px;
-  overflow: hidden;
+  font-family: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color: var(--text);
+  background: linear-gradient(180deg, var(--bg-top) 0%, var(--bg-bottom) 100%);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  /* keep content below the fixed header */
+  padding-top: var(--header-height);
+  min-height: 100vh;
+  overflow: auto;
 }
 
-p{
-  margin: 0;
+p{ margin: 0; }
+
+button{ font: inherit; cursor: pointer; border: none; background: none; padding: 0; }
+
+input, select, button { font-family: inherit; }
+
+/* Utility helpers */
+.container-centered {
+  width: min(980px, 96%);
+  margin: 0 auto;
 }
 
-button{
-  font-size: 14px;
-  cursor: pointer;
-}
-
-select {
-  cursor: pointer;
-}
-
-input, select, button {
-  font-family: Roboto, Arial;
-}
