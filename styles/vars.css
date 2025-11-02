@@ -1,0 +1,12 @@
+:root{
+  /* neutral black/grey theme for a realistic beginner dev aesthetic */
+  --bg-top: #0b0b0b;
+  --bg-bottom: #151515;
+  --panel: #1a1a1a;
+  --muted: #bdbdbd;
+  --text: #e6e6e6;
+  --accent: #9a9a9a;
+  --header-height: 64px;
+  --container-width: 980px;
+  --radius: 10px;
+}

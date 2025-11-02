@@ -1,10 +1,11 @@
-.main{ display:flex; gap:24px; align-items:flex-start; padding:28px 0 60px; }
+@import "./vars.css";
 
-.left-column{ width:280px; min-width:220px; }
+.main{ display:flex; gap:20px; align-items:flex-start; padding:20px 0 48px; }
+.left-column{ width:260px; min-width:200px; }
 .content-area{ flex:1; }
 
-.page-title{ font-size:24px; margin:4px 0 12px; color:var(--text); }
+.page-title{ font-size:22px; margin:2px 0 10px; color:var(--text); }
 .lead{ color:var(--muted); margin:0 0 18px; }
 
-.feature-grid{ display:grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap:14px; margin-top:16px; }
-.feature-card{ padding:16px; border-radius:12px; background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); border:1px solid rgba(255,255,255,0.04); box-shadow: 0 8px 30px rgba(2,6,23,0.4); }
+.feature-grid{ display:grid; grid-template-columns: repeat(auto-fit,minmax(200px,1fr)); gap:12px; margin-top:12px; }
+.feature-card{ padding:14px; border-radius:8px; background:#151515; border:1px solid #262626; color:var(--muted); font-size:14px; }
